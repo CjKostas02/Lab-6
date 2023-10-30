@@ -1,4 +1,5 @@
-
+# Kysa Mesa
+# Christopher Kostas
 
 def user_encode(user_data):
     # encode data
@@ -8,9 +9,12 @@ def user_encode(user_data):
     return result
 
 def user_decode(data):
+    decoded_data = ''
     # decode data
-    # through git hub
-    pass
+    for i in data:
+        decoded_data += str(int(i) - 3)
+    return decoded_data
+
 
 if __name__=="__main__":
     running=True
